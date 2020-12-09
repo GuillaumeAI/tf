@@ -15,7 +15,30 @@
 
 ```sh
 ./run-gpu-train-bg gix_MODELNAME... # Mathing what is in /a/model/models (where path will be)
+# Probably what I ran
+./run-gpu-train-bg  gia_style_AcrylicPaint2012
+
 ```
+
+# Paths
+
+```sh
+export dsroot=/a
+
+# My Paintings digitalized (ACtually the main datasets)
+$dsroot/lib/datasets/gia_style_AcrylicPaint2012
+
+# to my currently as low as possible learning of AI, that is used to learn about structures that we might find into my painting for segmentation before the style is applied, who knows, we need it !!! :)
+$dsroot/lib/data_large
+
+# Where the model was trained (17G for 300,000 training iterations)
+$dsroot/model/models/model_gia_style_AcrylicPaint2012_new
+
+# Where I copied the checkpoints along the training
+$dsroot/model/models/model_giacrypaint201205 
+
+```
+
 
 ## cat ./run-gpu-train-bg
 
@@ -47,7 +70,12 @@ $docker_exec run -it  -v $(pwd):$container_workdir \
 
 ```
 
+
 ## ps -aef | grep docker
+
+
+* Bellow is just to help understand what the nvidia-docker does as Wrapper of GPU capabilies
+
 
 ```sh
 

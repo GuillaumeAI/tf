@@ -1,5 +1,5 @@
-FROM jgwill/py27-cuda
-
+#FROM jgwill/py27-cuda
+FROM guillaumeai/abstract:cuda-9.0-devel-ubuntu17.04-py2.7
 
 
 RUN apt install git vim -y
