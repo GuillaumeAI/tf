@@ -1,0 +1,1 @@
+ python x__style_transfer__2010251156__30_01.py style/sample-style.jpg  content/sample-content.jpg  result/sample-result-gpu.jpg

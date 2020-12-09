@@ -1,0 +1,12 @@
+ 2  cd /data/
+    3  cd styleCheckpoint/
+    4  tar czf ../model_cezanne.tar.gz model_cezanne/
+    5  cd ..
+    6  ssh-copy-id jgi@10.10.22.255
+    7  10.10.22.255
+    8  ssh-keygen -t rsa
+    9  ssh-copy-id jgi@10.10.22.255
+   10  ssh jgi@192.168.1.169
+   11  ssh jgi@192.168.56.1
+   12  ssh jgi@10.10.23.193
+   13  scp model_cezanne.tar.gz jgi@10.10.22.255:/a/downloads/
