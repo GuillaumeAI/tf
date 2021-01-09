@@ -7,3 +7,5 @@ docker build -t guillaumai/tf:0.12-gpu ai-tf0.12/
 
 docker push guillaumai/tf:0.12-gpu
 docker push guillaumai/tf:0.12
+
+docker build -t guillaumai/tf:0.12-cpu ai-tf0.12-cpu
