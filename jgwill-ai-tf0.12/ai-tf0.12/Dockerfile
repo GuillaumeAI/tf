@@ -12,14 +12,14 @@ RUN apt install git vim -y
 
 
 RUN pip install tqdm
-RUN pip install  numpy  scipy
-RUN pip install Pillow
+#RUN pip install  numpy  scipy
+#RUN pip install Pillow
 
-RUN apt-get install libsm6 libxrender1 libfontconfig1 -y
+#RUN apt-get install libsm6 libxrender1 libfontconfig1 -y
 
 
-RUN pip install opencv-contrib-python
-RUN pip install pandas
+#RUN pip install opencv-contrib-python
+#RUN pip install pandas
 
 RUN pip install moviepy
 
