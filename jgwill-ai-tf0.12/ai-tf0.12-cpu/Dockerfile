@@ -13,7 +13,7 @@ RUN apt install git vim -y
 
 RUN pip install tqdm
 RUN pip install  numpy  scipy
-#RUN pip install Pillow
+RUN pip install Pillow
 
 
 
