@@ -13,4 +13,5 @@ RUN apt install -y curl
 RUN apt install -y wget bzip2
 RUN apt install python-pip -y
 
+RUN apt clean
 
