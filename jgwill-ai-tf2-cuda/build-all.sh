@@ -33,11 +33,24 @@ docker push jgwill/ai-tf-cuda:latest
 docker build -t jgwill/ai-tf:latest ai-tf2-cuda
 docker push jgwill/ai-tf:latest
 
-# GUillaume AI
+# GUillaume AI 
 docker build -t guillaumeai/tf:2.3.1 ai-tf2-cuda
 docker push guillaumeai/tf:2.3.1
 
 docker build -t guillaumeai/tf:latest ai-tf2-cuda
 docker push guillaumeai/tf:latest
+
+# GUillaume AI - CPU
+docker build -t guillaumeai/tf:2.3.1 ai-tf2-cuda-cpu
+docker push guillaumeai/tf:2.3.1-cpu
+
+docker build -t guillaumeai/tf:latest ai-tf2-cuda-cpu
+docker push guillaumeai/tf:latest-cpu
+
+
+# GUillaume AI NST
+docker build -t guillaumeai/tf:nst ai-tf2-cuda-nst
+docker push guillaumeai/tf:nst
+
 
 

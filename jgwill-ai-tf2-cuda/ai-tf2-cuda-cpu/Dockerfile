@@ -5,7 +5,7 @@ FROM jgwill/sci-cuda
 ENV DEBIAN_FRONTEND=noninteractive
 
 
-RUN pip install tensorflow-gpu
+RUN pip install tensorflow
 
 RUN pip install tensorflow_hub
 RUN echo "export TFHUB_CACHE_DIR=$HOME/.cache/tfhub_modules" >> ~/.bashrc
